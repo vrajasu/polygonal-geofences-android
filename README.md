@@ -15,13 +15,30 @@ c. Click on Add Image to add a tile image to be displayed with the geofence.
 d. Click on Add geofence to see the added geofence.
 e. Repeat to add more geofences.
 
+<p align="center">
+  <img src="https://github.com/vrajasu/polygonal-geofences-android/blob/master/screenshots/create_0.png" width="250"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/vrajasu/polygonal-geofences-android/blob/master/screenshots/create_one.png" width="250"/>
+</p>
+
+
 The geofences are locally stored on the device in a file.
 
 ## Viewing all Geofences
 You can view all the geofences that you have added by simply clicking on View All Geofences in the Main Activity.
 
+<p align="center">
+  <img src="https://github.com/vrajasu/polygonal-geofences-android/blob/master/screenshots/view_all.png" width="250"/>
+</p>
+
 ## Starting location updates
 To keep a track of the geofences you have visited, you can click on the Start Updates button. This starts off a background process that captures the location every 10 minutes and finds the geofence you are in currently(if any). The update is shown via a notification.
+
+<p align="center">
+  <img src="https://github.com/vrajasu/polygonal-geofences-android/blob/master/screenshots/notification.png" width="250"/>
+</p>
 
 ## Stopping the updates
 To stop the updates click on the Stop updates button and clear the notification.
