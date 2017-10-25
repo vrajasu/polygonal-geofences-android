@@ -25,6 +25,7 @@ import java.util.List;
 
 /**
  * Created by vrajdelhivala on 10/20/17.
+ * adapting the screen
  */
 
 public class LocationService extends IntentService {
@@ -46,7 +47,6 @@ public class LocationService extends IntentService {
                 LocationResult result = LocationResult.extractResult(intent);
                 if (result != null) {
                     List<Location> locations = result.getLocations();
-                    // Save the location data to SharedPreferences.
                     Log.d("Locations", "" + locations.get(0).getLatitude() + "," + locations.get(0).getLongitude());
                     readFromFile();
                     String geofenceName = "";

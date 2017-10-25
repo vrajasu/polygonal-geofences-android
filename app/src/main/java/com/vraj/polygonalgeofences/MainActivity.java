@@ -4,6 +4,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.icu.text.UnicodeSetSpanner;
 import android.os.Environment;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.jar.*;
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         btn_start = (Button) findViewById(R.id.btn_start_updates);
         btn_stop = (Button) findViewById(R.id.btn_stop_updates);
         btn_view = (Button) findViewById(R.id.btn_view_gf);
+
         File folder = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/GeoFences");
         if (!folder.exists()) {
             folder.mkdir();

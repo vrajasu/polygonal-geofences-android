@@ -1,7 +1,5 @@
 package com.vraj.polygonalgeofences;
 
-import com.google.android.gms.maps.model.LatLng;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
