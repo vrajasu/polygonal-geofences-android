@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     int num_geofences = 0;
     GoogleApiClient googleApiClient;
     LocationRequest locationRequest;
-    int UPDATE_INTERVAL = 5*1000;
+    int UPDATE_INTERVAL = 5*1000*60;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -166,7 +166,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient,
                 getPendingIntent());
     }
-
     private PendingIntent getPendingIntent() {
         Intent intent = new Intent(this, LocationService.class);
         intent.setAction(LocationService.update_action);
