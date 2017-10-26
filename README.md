@@ -1,6 +1,8 @@
 # polygonal-geofences-android
 The functionality of maps and spatial-temoral data is used in a lot of applications today. As a part of one of my undergraduate projects, I was required to make an Android Application that logs the users location coordinates every 5 minutes. We then wanted to use this data to determine relationship coefficients between sets of people. I decided to extend the application and enable adding geofences onto the Map. A geofence acts as a region of interest and can be used to study people's behaviour patterns. Also, Google Maps Android SDK doesnt provide an option to draw Polygonal geofences.
 
+To run the Application on Android 6 and above, you will need to enable the permissions from the Settings -> Apps -> Polygonal Geofences -> Permissions -> Enable Location and Storage.
+
 ## The Application is divided into 4 parts.
 1. Adding a Geofence.
 2. Viewing all Geofences.
